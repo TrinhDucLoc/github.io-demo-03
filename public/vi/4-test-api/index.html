@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Tags :: Triển khai Ứng dụng ShareNote với Auto Scaling Group</title>
+    <title>Hỗ trợ Xác thực Tài khoản :: Triển khai Ứng dụng ShareNote với Auto Scaling Group</title>
 
     
     <link href="/css/nucleus.css?1725286037" rel="stylesheet">
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/vi/tags/">
+  <body class="" data-url="/vi/4-test-api/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -162,7 +162,7 @@
     
     <li data-nav-id="/vi/4-test-api/" title="Hỗ trợ Xác thực Tài khoản" class="dd-item 
         
-        
+        active
         
         ">
       <a href="/vi/4-test-api/">
@@ -243,7 +243,7 @@
                   
                     
                     
-                      <option id="en" value="//localhost:1313/tags/">English</option>
+                      <option id="en" value="//localhost:1313/4-test-api/">English</option>
                     
                   
               
@@ -257,7 +257,7 @@
                   
                     
                     
-                      <option id="vi" value="//localhost:1313/vi/tags/" selected>Tiếng Việt</option>
+                      <option id="vi" value="//localhost:1313/vi/4-test-api/" selected>Tiếng Việt</option>
                     
                   
               
@@ -343,7 +343,7 @@
             
           
           
-            <a href='/vi/'>Thiết lập Tài Khoản AWS</a> > Tags
+            <a href='/vi/'>Thiết lập Tài Khoản AWS</a> > Hỗ trợ Xác thực Tài khoản
           
         
           
@@ -354,7 +354,15 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -370,9 +378,7 @@
           
             <h1>
               
-                taxonomy ::
-              
-              Tags
+              Hỗ trợ Xác thực Tài khoản
             </h1>
           
 
@@ -380,11 +386,50 @@
 
 
 
-
-
+	<p><strong>Nội dung:</strong></p>
 <ul>
-	
+<li><a href="/vi/4-test-api/#kiểm-tra-các-thông-tin">Kiểm tra các thông tin</a></li>
+<li><a href="/vi/4-test-api/#tạo-case-hỗ-trợ-với-aws-support">Tạo case hỗ trợ với AWS Support</a></li>
 </ul>
+<p>Trong quá trình khởi tạo tài khoản AWS, ở bước xác thực thông tin số điện thoại liên lạc, đôi khi sẽ xảy ra tình trạng không nhận được tin nhắn SMS hoặc cuộc gọi từ phía AWS. Trong trường hợp đó, hãy làm theo các bước sau để hoàn thành việc xác nhận thông tin tài khoản:</p>
+<h4 id="kiểm-tra-các-thông-tin">Kiểm tra các thông tin</h4>
+<p>Đầu tiên, hãy kiểm tra lại các thông tin tài khoản của bạn và đảm bảo chúng đã được nhập chính xác:</p>
+<ul>
+<li>Bạn đã nhập thông tin số điện thoại và chọn mã vùng quốc tế chính xác để nhận SMS hay cuộc gọi.</li>
+<li>Nếu bạn sử dụng điện thoại di động, kiểm tra điện thoại của bạn để chắc chắn bạn vẫn đang trong vòng phủ sóng để nhận SMS hay cuộc gọi.</li>
+<li>Thông tin về phương thức thanh toán đã được nhập chính xác.
+
+<div class="notices info" ><p>Hãy chắc chắn rằng số điện thoại mà bạn cung cấp trong tài khoản AWS của bạn có thể liên lạc được.</p>
+</div>
+</li>
+</ul>
+<h4 id="tạo-case-hỗ-trợ-với-aws-support">Tạo case hỗ trợ với AWS Support</h4>
+<p>Sau khi kiểm tra thông tin chính xác nhưng vẫn chưa nhận được tin nhắn SMS hoặc cuộc gọi xác thực, AWS Support sẽ hỗ trợ bạn kích hoạt tài khoản một cách thủ công.</p>
+<ol>
+<li>Truy cập vào <a href="https://aws.amazon.com/support/">AWS Support console</a>, chọn <strong>Create case</strong>.
+<img alt="AWS Support" src="/images/1-account-setup/1.png?width=90pc"></li>
+<li>Chọn <strong>Account and billing support</strong> và nhập các thông tin hỗ trợ:
+<ul>
+<li>Type: chọn <strong>Account</strong>.</li>
+<li>Category: chọn <strong>Activation</strong>.</li>
+<li>Subject: viết ngắn gọn tình trạng gặp phải của bạn (VD: <strong>Did not receive an SMS message or call for verification</strong>)</li>
+<li>Description: Cung cấp chi tiết tình trạng gặp phải và thông tin về thời gian bạn cần hỗ trợ kích hoạt tài khoản.</li>
+<li>Attachments: Đính kèm hình ảnh mô tả bước xác thực đang vướng phải.
+<img alt="AWS Support" src="/images/1-account-setup/2.png?width=90pc"></li>
+</ul>
+</li>
+<li>Ở mục <strong>Contact options</strong>, chọn <strong>Chat</strong> ở <strong>Contact methods</strong>.
+<img alt="AWS Support" src="/images/1-account-setup/3.png?width=90pc"></li>
+<li>Chọn <strong>Submit</strong>.</li>
+<li>Đội ngũ AWS Support sẽ liên lạc và hỗ trợ kích hoạt tài khoản của bạn.</li>
+</ol>
+
+<div class="notices note" ><p>Bạn có thể tạo yêu cầu hỗ trợ với AWS Support ngay cả khi tài khoản của bạn chưa được kích hoạt.</p>
+</div>
+
+
+
+
 
 
 <footer class=" footline" >
@@ -473,6 +518,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -489,6 +535,9 @@
             
                 
                     
+                        
+                        
+                    
                 
                 
 
@@ -509,8 +558,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/vi/3-deploy-api/" title="Tạo Admin Group và Admin User"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/vi/1-create-lambda-function/" title="Tạo mới tài khoản AWS" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/vi/5-monitor-api/" title="Hỗ trợ Xác thực Tài khoản" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

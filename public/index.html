@@ -9,24 +9,24 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Triển khai Ứng dụng ShareNote với Auto Scaling Group :: Deploy ShareNote Application on Auto Scaling Group</title>
+    <title>Setting up an AWS account :: Deploy ShareNote Application on Auto Scaling Group</title>
 
     
-    <link href="/css/nucleus.css?1725285046" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1725285046" rel="stylesheet">
-    <link href="/css/hybrid.css?1725285046" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1725285046" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1725285046" rel="stylesheet">
-    <link href="/css/auto-complete.css?1725285046" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1725285046" rel="stylesheet">
-    <link href="/css/theme.css?1725285046" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1725285046" rel="stylesheet">
+    <link href="/css/nucleus.css?1725286111" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1725286111" rel="stylesheet">
+    <link href="/css/hybrid.css?1725286111" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1725286111" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1725286111" rel="stylesheet">
+    <link href="/css/auto-complete.css?1725286111" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1725286111" rel="stylesheet">
+    <link href="/css/theme.css?1725286111" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1725286111" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1725285046" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1725286111" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1725285046"></script>
+    <script src="/js/jquery-3.3.1.min.js?1725286111"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1725285046"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1725285046"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1725286111"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1725286111"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1725285046"></script>
+<script type="text/javascript" src="/js/search.js?1725286111"></script>
 
     
   </div>
@@ -82,259 +82,13 @@
  
   
     
-    <li data-nav-id="/1-prerequisite/" title="Các bước chuẩn bị" class="dd-item 
+    <li data-nav-id="/1-create-lambda-function/" title="CREATING A LAMBDA FUNCTION" class="dd-item 
         
         
         
         ">
-      <a href="/1-prerequisite/">
-          <b>1. </b>Các bước chuẩn bị
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-      
-        <ul>
-          
-          
-            
-          
-          
-          
-        
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/1-prerequisite/1-security-group/" title="Tạo Security Group" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/1-prerequisite/1-security-group/">
-          <b>1.1 </b>Tạo Security Group
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/1-prerequisite/2-database/" title="Tạo ShareNote Database" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/1-prerequisite/2-database/">
-          <b>1.2 </b>Tạo ShareNote Database
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/1-prerequisite/3-deploy-sharenote/" title="Triển khai Máy ảo ShareNote" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/1-prerequisite/3-deploy-sharenote/">
-          <b>1.3 </b>Triển khai Máy ảo ShareNote
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-      
-        <ul>
-          
-          
-            
-          
-          
-          
-        
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/1-prerequisite/3-deploy-sharenote/1.3.1-createec2/" title="Tạo máy ảo EC2 Ubuntu" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/1-prerequisite/3-deploy-sharenote/1.3.1-createec2/">
-          <b>1.3.1 </b>Tạo máy ảo EC2 Ubuntu
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/1-prerequisite/3-deploy-sharenote/1.3.2-configure-db-sharenote/" title="Thiết lập cấu hình Database cho ShareNote" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/1-prerequisite/3-deploy-sharenote/1.3.2-configure-db-sharenote/">
-          <b>1.3.2 </b>Thiết lập cấu hình Database cho ShareNote
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/1-prerequisite/3-deploy-sharenote/1.3.3-autostart/" title="Thiết lập khởi chạy ứng dụng khi khởi chạy instance" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/1-prerequisite/3-deploy-sharenote/1.3.3-autostart/">
-          <b>1.3.3 </b>Thiết lập khởi chạy ứng dụng khi khởi chạy instance
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-        
-        </ul>
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/1-prerequisite/4-create-ami/" title="Khởi tạo AMI từ Máy ảo" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/1-prerequisite/4-create-ami/">
-          <b>1.4 </b>Khởi tạo AMI từ Máy ảo
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-        
-        </ul>
-              
-    </li>
-  
- 
-
-          
-          
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/2-launch-template/" title="Khởi tạo Launch Template" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/2-launch-template/">
-          <b>2. </b>Khởi tạo Launch Template
+      <a href="/1-create-lambda-function/">
+          <b>1. </b>CREATING A LAMBDA FUNCTION
           
             <i class="fas fa-check read-icon"></i>
           
@@ -354,13 +108,13 @@
  
   
     
-    <li data-nav-id="/3-target-group/" title="Khởi tạo Target Group" class="dd-item 
+    <li data-nav-id="/2-setup-api-gateway/" title="SETTING UP API GATEWAY" class="dd-item 
         
         
         
         ">
-      <a href="/3-target-group/">
-          <b>3. </b>Khởi tạo Target Group
+      <a href="/2-setup-api-gateway/">
+          <b>2. </b>SETTING UP API GATEWAY
           
             <i class="fas fa-check read-icon"></i>
           
@@ -380,13 +134,13 @@
  
   
     
-    <li data-nav-id="/4-load-balance/" title="Khởi tạo Load Balancer" class="dd-item 
+    <li data-nav-id="/3-deploy-api/" title="DEPLOYING THE API" class="dd-item 
         
         
         
         ">
-      <a href="/4-load-balance/">
-          <b>4. </b>Khởi tạo Load Balancer
+      <a href="/3-deploy-api/">
+          <b>3. </b>DEPLOYING THE API
           
             <i class="fas fa-check read-icon"></i>
           
@@ -406,13 +160,13 @@
  
   
     
-    <li data-nav-id="/5-asg/" title="Khởi tạo Auto Scaling Group" class="dd-item 
+    <li data-nav-id="/4-test-api/" title="TESTING THE API" class="dd-item 
         
         
         
         ">
-      <a href="/5-asg/">
-          <b>5. </b>Khởi tạo Auto Scaling Group
+      <a href="/4-test-api/">
+          <b>4. </b>TESTING THE API
           
             <i class="fas fa-check read-icon"></i>
           
@@ -432,39 +186,13 @@
  
   
     
-    <li data-nav-id="/6-testing/" title="Kiểm tra Kết quả" class="dd-item 
+    <li data-nav-id="/5-monitor-api/" title="Monitoring and Managing Your API" class="dd-item 
         
         
         
         ">
-      <a href="/6-testing/">
-          <b>6. </b>Kiểm tra Kết quả
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-          
-          
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/7-clean-up/" title="Dọn dẹp tài nguyên" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/7-clean-up/">
-          <b>7. </b>Dọn dẹp tài nguyên
+      <a href="/5-monitor-api/">
+          <b>5. </b>Monitoring and Managing Your API
           
             <i class="fas fa-check read-icon"></i>
           
@@ -606,28 +334,45 @@
 </span>
 
  
-<h1 id="triển-khai-ứng-dụng-sharenote-với-auto-scaling-group">Triển khai Ứng dụng ShareNote với Auto Scaling Group</h1>
-<h4 id="tổng-quan">Tổng quan</h4>
-<p>Ở bài thực hành này, chúng ta sẽ tiến hành việc triển khai ứng dụng với <strong>Auto Scaling Group</strong> nhằm đảm bảo khả năng co giãn của ứng dụng đó theo nhu cầu của người truy cập.
-Thêm vào đó, chúng ta cũng sẽ triển khai <strong>Load Balancer</strong> nhằm cân bằng tải và điều phối các yêu cầu truy cập từ phía người dùng đến Application Tier của chúng ta.</p>
-<p>Hãy chắc chắn rằng bạn đã xem qua tài liệu <a href="https://000004.awsstudygroup.com/">Triển khai Ứng dụng ShareNote trên Máy ảo Windows/AmazonLinux</a> và nắm được cách triển khai ứng dụng trên máy ảo. Chúng ta sẽ cần sử dụng máy ảo được triển khai ShareNote cho việc triển khai đồng loạt và mở rộng trong Auto Scaling Group.</p>
-<h4 id="auto-scaling-group">Auto Scaling Group</h4>
-<p><strong>Auto Scaling Group</strong> (<em>nhóm co giãn tự động</em>) là một nhóm các EC2 Instance. Nhóm này có thể co giãn số lượng của các EC2 Instance thành viên theo <strong>chính sách co giãn</strong> (<em>scaling policy</em>) mà bạn đặt ra.</p>
-<h4 id="launch-template">Launch Template</h4>
-<p><strong>Launch Template</strong> (<em>khuôn mẫu khởi tạo</em>) là một tính năng giúp bạn tạo khuôn mẫu cho việc khởi tạo các EC2 Instance. Nhờ thế, bạn có thể quy trình hóa và đơn giản hóa công tác khởi tạo các EC2 Instance cho dịch vụ <strong>Auto Scaling</strong> (<em>co giãn tự động</em>).</p>
-<h4 id="load-balancer">Load Balancer</h4>
-<p><strong>Load Balancer</strong> (<em>máy cân bằng tải</em>) là một công cụ có thể phân phối lưu lượng dữ liệu được trao đổi tới các tài nguyên AWS (cụ thể trong bài lab này là các EC2 Instances) trong <strong>Target Group</strong>.</p>
-<h4 id="target-group">Target Group</h4>
-<p><strong>Target Group</strong> (<em>nhóm mục tiêu</em>) là một nhóm những thành phần tài nguyên AWS sẽ nhận lưu lượng dữ liệu được phân phối và truyền tải bởi <strong>Load Balancer</strong>.</p>
-<h4 id="nội-dung">Nội dung:</h4>
+<h1 id="build-rest-api-with-aws-api-gateway">BUILD REST API WITH AWS API GATEWAY</h1>
+<h4 id="overview">Overview</h4>
+<p>In this tutorial, you will learn how to create a REST API using <strong>AWS API Gateway</strong> and <strong>AWS Lambda</strong>. We will walk you through setting up a basic API that integrates with a Lambda function, demonstrating how these AWS services work together to build scalable and serverless applications. This guide is designed for beginners in AWS cloud computing and covers the essential steps and concepts involved.</p>
+<h4 id="aws-api-gateway">AWS API Gateway</h4>
+<p><strong>AWS API Gateway</strong> is a fully managed service that allows you to create, deploy, and manage APIs at any scale. It serves as a gateway to your backend services, such as AWS Lambda functions or other AWS services. API Gateway handles tasks like request routing, authorization, and API monitoring.</p>
+<h4 id="aws-lambda">AWS Lambda</h4>
+<p><strong>AWS Lambda</strong> is a serverless computing service that lets you run code in response to events without provisioning or managing servers. You can write your code in various programming languages, and Lambda automatically manages the compute resources needed to execute it. In this tutorial, Lambda will be used to process requests coming from API Gateway.</p>
+<h4 id="steps-to-create-a-rest-api">Steps to Create a REST API</h4>
 <ol>
-<li><a href="/1-prerequisite/">Các bước chuẩn bị</a></li>
-<li><a href="/2-launch-template/">Khởi tạo Launch Template</a></li>
-<li><a href="/3-target-group/">Khởi tạo Target Group</a></li>
-<li><a href="5-load-balance">Khởi tạo Load Balancer</a></li>
-<li><a href="4-asg">Khởi tạo Auto Scaling Group</a></li>
-<li><a href="/6-testing/">Kiểm tra kết quả</a></li>
+<li>
+<p><strong>Create a Lambda Function</strong>: Start by creating a Lambda function in the AWS Management Console. This function will handle the logic for processing API requests.</p>
+</li>
+<li>
+<p><strong>Set Up API Gateway</strong>: Create a new API in API Gateway. Define the resources and methods for your API and link them to the Lambda function you created.</p>
+</li>
+<li>
+<p><strong>Deploy the API</strong>: After configuring your API, deploy it to a stage. This makes your API accessible to clients over the internet.</p>
+</li>
+<li>
+<p><strong>Test Your API</strong>: Use tools such as Postman or curl to send requests to your API endpoint and ensure it is working correctly.</p>
+</li>
+<li>
+<p><strong>Monitor and Manage</strong>: Utilize CloudWatch Logs and Metrics to monitor your API and Lambda function&rsquo;s performance and handle any issues that arise.</p>
+</li>
 </ol>
+<h4 id="detailed-steps">Detailed Steps</h4>
+<ol>
+<li><a href="/1-create-lambda-function/">Creating a Lambda Function</a></li>
+<li><a href="/2-setup-api-gateway/">Setting Up API Gateway</a></li>
+<li><a href="/3-deploy-api/">Deploying the API</a></li>
+<li><a href="/4-test-api/">Testing the API</a></li>
+<li><a href="/5-monitor-api/">Monitoring and Managing Your API</a></li>
+</ol>
+<h4 id="conclusion">Conclusion</h4>
+<p>By completing this tutorial, you will have created a functional REST API integrated with AWS Lambda. This setup demonstrates the advantages of serverless architectures, simplifying the deployment and management of web services.</p>
+
+<div class="notices note" ><p>This tutorial assumes a basic understanding of AWS Management Console and REST API concepts. If you&rsquo;re unfamiliar with these topics, consider reviewing introductory materials on AWS and APIs before starting this tutorial.</p>
+</div>
+
 	
   
         
@@ -669,154 +414,6 @@ Thêm vào đó, chúng ta cũng sẽ triển khai <strong>Load Balancer</strong
 
                     
                     
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
                     
 
                     
@@ -897,7 +494,7 @@ Thêm vào đó, chúng ta cũng sẽ triển khai <strong>Load Balancer</strong
 	 
 		
 		
-			<a class="nav nav-next" href="/1-prerequisite/" title="Các bước chuẩn bị" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/1-create-lambda-function/" title="CREATING A LAMBDA FUNCTION" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -907,19 +504,19 @@ Thêm vào đó, chúng ta cũng sẽ triển khai <strong>Load Balancer</strong
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1725285046"></script>
-    <script src="/js/perfect-scrollbar.min.js?1725285046"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1725285046"></script>
-    <script src="/js/jquery.sticky.js?1725285046"></script>
-    <script src="/js/featherlight.min.js?1725285046"></script>
-    <script src="/js/highlight.pack.js?1725285046"></script>
+    <script src="/js/clipboard.min.js?1725286111"></script>
+    <script src="/js/perfect-scrollbar.min.js?1725286111"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1725286111"></script>
+    <script src="/js/jquery.sticky.js?1725286111"></script>
+    <script src="/js/featherlight.min.js?1725286111"></script>
+    <script src="/js/highlight.pack.js?1725286111"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1725285046"></script>
-    <script src="/js/learn.js?1725285046"></script>
-    <script src="/js/hugo-learn.js?1725285046"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1725286111"></script>
+    <script src="/js/learn.js?1725286111"></script>
+    <script src="/js/hugo-learn.js?1725286111"></script>
 
-    <link href="/mermaid/mermaid.css?1725285046" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1725285046"></script>
+    <link href="/mermaid/mermaid.css?1725286111" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1725286111"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
